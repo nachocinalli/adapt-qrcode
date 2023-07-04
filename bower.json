@@ -1,0 +1,14 @@
+{
+  "name": "adapt-qrcode",
+  "version": "1.0.0",
+  "framework": ">=5.19.1",
+  "homepage": "https://github.com/nachocinalli/adapt-qrcode",
+  "bugs": "https://github.com/nachocinalli/adapt-qrcode/issues",
+  "component": "qrcode",
+  "targetAttribute": "_qrcode",
+  "displayName": "QR Code",
+  "description": "A component to generate QR Codes",
+  "main": "/js/adapt-qrcode.js",
+  "keywords": ["adapt-plugin", "adapt-component"],
+  "license": "GPL-3.0"
+}

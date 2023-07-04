@@ -1,0 +1,26 @@
+{
+  "_id": "c-05",
+  "_parentId": "b-05",
+  "_type": "component",
+  "_component": "qrcode",
+  "_classes": "",
+  "_layout": "full",
+  "title": "QR Code URL",
+  "displayTitle": "QR Code",
+  "body": "This is optional body text.",
+  "instruction": "Scan the QR code to visit my LinkedIn profile.",
+  "text": "https://www.linkedin.com/in/nachocinalli/",
+  "size": 200,
+  "margin": 4,
+  "color": {
+    "dark": "#000000",
+    "light": "#ffffff"
+  },
+  "alt": "Alt text",
+  "longdescription": "Optional description text.",
+  "_isResourceItem": false,
+  "_resourceItemIndex": 0,
+  "_pageLevelProgress": {
+    "_isEnabled": true
+  }
+}

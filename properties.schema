@@ -1,0 +1,118 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"id": "http://jsonschema.net",
+	"$ref": "http://localhost/plugins/content/component/model.schema",
+	"globals": {
+		"ariaRegion": {
+			"type": "string",
+			"required": true,
+			"default": "",
+			"inputType": "Text",
+			"validators": [],
+			"translatable": true
+		}
+	},
+	"properties": {
+		"_supportedLayout": {
+			"type": "string",
+			"required": true,
+			"enum": ["full-width", "half-width", "both"],
+			"default": "both",
+			"editorOnly": true
+		},
+		"instruction": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"inputType": "Text",
+			"validators": [],
+			"help": "This is the instruction text",
+			"translatable": true
+		},
+		"text": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"inputType": "Text",
+			"validators": [],
+			"help": "This is the text",
+			"translatable": false
+		},
+		"size": {
+			"type": "number",
+			"required": false,
+			"default": 200,
+			"inputType": "Number",
+			"validators": ["number"],
+			"help": "This is the size"
+		},
+		"margin": {
+			"type": "number",
+			"required": false,
+			"default": 4,
+			"inputType": "Number",
+			"validators": ["number"],
+			"help": "This is the margin"
+		},
+		"color": {
+			"type": "object",
+			"title": "Colors",
+			"properties": {
+				"dark": {
+					"type": "string",
+					"format": "color",
+					"title": "Dark",
+					"inputType": "Text",
+					"validators": [],
+					"default": "#000000"
+				},
+				"light": {
+					"type": "string",
+					"format": "color",
+					"title": "Light",
+					"inputType": "Text",
+					"validators": [],
+					"default": "#ffffff"
+				}
+			}
+		},
+		"alt": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"title": "Alternative Text",
+			"inputType": "Text",
+			"validators": [],
+			"help": "Alternative text for the qr code image",
+			"translatable": true
+		},
+		"longdescription": {
+			"type": "string",
+			"required": false,
+			"default": "",
+			"title": "Long image description",
+			"inputType": "Text",
+			"validators": [],
+			"help": "A long description. This text appear below the qr code image.",
+			"translatable": true
+		},
+		"_isResourceItem": {
+			"type": "boolean",
+			"default": false,
+			"title": "Is part of resources",
+			"inputType": "Checkbox",
+			"validators": [],
+			"help": "Allow generate a link from one of the resources of the course"
+		},
+		"_resourceItemIndex": {
+			"type": "number",
+			"required": true,
+			"default": 0,
+			"title": "Resource item index",
+			"inputType": "Number",
+			"validators": ["required", "number"],
+			"help": "The index of the resource item to link to. The first item has index 0."
+		}
+	}
+}
